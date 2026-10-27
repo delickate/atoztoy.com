@@ -1,0 +1,1 @@
+{"version":2,"defects":{"Tests\\Feature\\CategoryTest::test_admin_can_create_category":7,"Tests\\Feature\\CategoryTest::test_home_page_displays_category_images":8},"times":{"Tests\\Feature\\CategoryTest::test_admin_can_create_category":0.368,"Tests\\Feature\\CategoryTest::test_home_page_displays_category_images":0.193}}
