@@ -81,9 +81,6 @@ Route::get('/shop/categories/{category?}', [CategoryController::class, 'show'])
 Route::get('/products/listing', [ProductController::class, 'listing'])
             ->name('products.listing');
 
-        Route::get('/products/{product}', [ProductController::class, 'show'])
-            ->name('products.show');
-
         Route::get('/products/category/{category}', [ProductController::class, 'category'])
             ->name('products.category');
 
@@ -199,6 +196,10 @@ Route::post('/contact-us', [ContactController::class, 'store'])->name('contact.s
         Route::resource('roles', RoleController::class);
         Route::resource('categories', CategoryController::class)->except(['show']);
         Route::resource('products', ProductController::class)->except(['show','listing']);
+
+        Route::get('/products/{product}', [ProductController::class, 'show'])
+            ->name('products.show');
+
         Route::get('/customers', [CustomerController::class, 'index'])->name('customers.index');
 
         
